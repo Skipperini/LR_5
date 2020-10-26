@@ -16,7 +16,9 @@ int main()
 	cin >> n;
 	cout << "введіть значення s: ";
 	cin >> s;
-	f = (s / (n / m));
+	cout << "введіть значення l: ";
+	cin >> l;
+	f = (s / (n / m)) * l;
 	cout << "f = " << f << endl;
 	system("pause");
 	return 0;
