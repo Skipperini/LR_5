@@ -12,20 +12,21 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	int x, a, b, c;
+	int x, k, b, c;
 	double f;
 	cout << "¬вед≥ть x: ";
 	cin >> x;
-	cout << "¬вед≥ть a: ";
-	cin >> a;
+	cout << "¬вед≥ть k: ";
+	cin >> k;
 	cout << "¬вед≥ть b: ";
 	cin >> b;
 	cout << "¬вед≥ть c: ";
 	cin >> c;
 
-	if ((x + c) < 0 && a != 0) { f = -a * pow(x, 3) - b; }
-	if ((x + c) > 0 && a == 0) { f = (x - a) / (x - c); }
+	if ((x + c) < 0 && k != 0) { f = -k * pow(x, 3) - b; }
+	if ((x + c) > 0 && k == 0) { f = (x - k) / (x - c); }
 	else { f = (x / c) + (c / x); }
+	cout << "–езультат обчислень:" << endl;
 	cout << "F=" << f << endl;
 	system("pause");
 	return 0;
