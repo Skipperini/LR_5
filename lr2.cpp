@@ -9,16 +9,17 @@ int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	double m, n, s, f;
-	cout << "введіть значення m: ";
-	cin >> m;
+	double g, n, s, f;
+	cout << "введіть значення g: ";
+	cin >> g;
 	cout << "введіть значення n: ";
 	cin >> n;
 	cout << "введіть значення s: ";
 	cin >> s;
 	cout << "введіть значення l: ";
 	cin >> l;
-	f = (s / (n / m)) * l;
+	f = (s / (n / g)) * l;
+	cout << "Результат:" << endl;
 	cout << "f = " << f << endl;
 	system("pause");
 	return 0;
