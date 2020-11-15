@@ -1,28 +1,36 @@
-// lr2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// lab5.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
+#include <iomanip>
 #include "windows.h"
 using namespace std;
+
 
 int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	double g, n, s, f;
-	cout << "введ≥ть значенн€ g: ";
-	cin >> g;
-	cout << "введ≥ть значенн€ n: ";
-	cin >> n;
-	cout << "введ≥ть значенн€ s: ";
-	cin >> s;
-	cout << "введ≥ть значенн€ l: ";
-	cin >> l;
-	f = (s / (n / g)) * l;
-	cout << "–езультат:" << endl;
-	cout << "f = " << f << endl;
+
+	int x, k, b, c;
+	double f;
+	cout << "¬вед≥ть x: ";
+	cin >> x;
+	cout << "¬вед≥ть k: ";
+	cin >> k;
+	cout << "¬вед≥ть b: ";
+	cin >> b;
+	cout << "¬вед≥ть c: ";
+	cin >> c;
+
+	if ((x + c) < 0 && k != 0) { f = -k * pow(x, 3) - b; }
+	if ((x + c) > 0 && k == 0) { f = (x - k) / (x - c); }
+	else { f = (x / c) + (c / x); }
+	cout << "–езультат обчислень:" << endl;
+	cout << "F=" << f << endl;
 	system("pause");
 	return 0;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
